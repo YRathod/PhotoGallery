@@ -44,13 +44,11 @@ export class PhotoGalleryComponent implements OnInit, OnDestroy {
     }
   }
   openDialog(photo: Photo, enterAnimationDuration: string, exitAnimationDuration: string) {
-    console.log(photo)
     const dialogRef = this.dialog.open(DialogComponent, {
       width: 'auto',
       height: 'auto',
       maxHeight: '800px',
       maxWidth:'800px',
-      panelClass: 'full-screen-modal',
       data: photo,
       enterAnimationDuration,
       exitAnimationDuration,

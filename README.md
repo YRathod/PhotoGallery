@@ -5,9 +5,10 @@
 
 High level features-
 
-1. Landing page - Display Thumbnail images with title and Album #
+1. Landing page - Display thumbnail images with title and Album #
 2. User can filter List by Album # (added dropdown)
 3. When user click on image, it will open modal popup with bigger image
+4. slow animation when user click on thumbnail image top open large image in popup
 
 Technical points
 
