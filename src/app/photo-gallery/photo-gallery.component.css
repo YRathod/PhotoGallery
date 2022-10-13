@@ -1,0 +1,34 @@
+.gallery {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.gallery-item {
+  display: grid;
+  padding: 2rem;
+  grid-template-columns: 300px 1fr;
+  gap: 1rem;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  font: 500 100%/1.5 system-ui;
+}
+img {
+  max-width: 200px;
+  height: auto;
+}
+img:hover{
+  cursor: pointer;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(1, 2fr);
+  grid-template-rows: masonry;
+  padding: 10px;
+}
+.full-screen-modal .mat-dialog-container {
+  padding: 1em;
+  width: 800px;
+  height: 800px;
+}

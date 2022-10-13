@@ -1,0 +1,23 @@
+  <div style="display:flex; flex-direction:column;">
+    <div class="container">
+      <mat-form-field appearance="fill">
+        <mat-label>Select Album</mat-label>
+        <mat-select [(value)]="filter">
+          <mat-option>None</mat-option>
+          <mat-option *ngFor="let album of albums" [value]="album ">
+            Album # {{album}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="container" *ngFor="let photo of photos | albumFilter:filter">
+      <mat-card>
+        <mat-card-title>Album # {{photo.albumId}}</mat-card-title>
+        <mat-card-subtitle>{{photo.title}}</mat-card-subtitle>
+        <mat-card-content><img src="{{photo.thumbnailUrl}}" (click)="openDialog(photo,'500ms', '700ms')"/></mat-card-content>
+      </mat-card>
+      <mat-divider></mat-divider>
+    </div>
+  </div>
+
+
